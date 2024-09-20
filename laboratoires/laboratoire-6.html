@@ -1,0 +1,633 @@
+<!doctype html>
+<html lang="fr" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-laboratoires/laboratoire6" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.4.0">
+<title data-rh="true">Semaine 6 | Initiation à l’ordinateur et ses composantes - Automne 2024</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://fsthilaire.github.io/a24-1r1/laboratoires/laboratoire-6"><meta data-rh="true" property="og:locale" content="fr"><meta data-rh="true" name="docusaurus_locale" content="fr"><meta data-rh="true" name="docsearch:language" content="fr"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Semaine 6 | Initiation à l’ordinateur et ses composantes - Automne 2024"><meta data-rh="true" name="description" content="Vous devez avoir absolument votre clé USB pour ce laboratoire."><meta data-rh="true" property="og:description" content="Vous devez avoir absolument votre clé USB pour ce laboratoire."><link data-rh="true" rel="icon" href="/a24-1r1/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://fsthilaire.github.io/a24-1r1/laboratoires/laboratoire-6"><link data-rh="true" rel="alternate" href="https://fsthilaire.github.io/a24-1r1/laboratoires/laboratoire-6" hreflang="fr"><link data-rh="true" rel="alternate" href="https://fsthilaire.github.io/a24-1r1/laboratoires/laboratoire-6" hreflang="x-default"><link data-rh="true" rel="preconnect" href="https://88N38QIZB4-dsn.algolia.net" crossorigin="anonymous"><link rel="search" type="application/opensearchdescription+xml" title="Initiation à l’ordinateur et ses composantes - Automne 2024" href="/a24-1r1/opensearch.xml"><link rel="stylesheet" href="/a24-1r1/assets/css/styles.ec24223a.css">
+<script src="/a24-1r1/assets/js/runtime~main.deff537e.js" defer="defer"></script>
+<script src="/a24-1r1/assets/js/main.a09cc047.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Aller au contenu principal"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Aller au contenu principal</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><a class="navbar__brand" href="/a24-1r1/"><div class="navbar__logo"><img src="/a24-1r1/img/logo.svg" alt="" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/a24-1r1/img/logo.svg" alt="" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Initiation à l’ordinateur et ses composantes</b></a></div><div class="navbar__items navbar__items--right"><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Basculer entre le mode sombre et clair (actuellement mode clair)" aria-label="Basculer entre le mode sombre et clair (actuellement mode clair)" aria-live="polite"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><button type="button" class="DocSearch DocSearch-Button" aria-label="Chercher"><span class="DocSearch-Button-Container"><svg width="20" height="20" class="DocSearch-Search-Icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg><span class="DocSearch-Button-Placeholder">Chercher</span></span><span class="DocSearch-Button-Keys"></span></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Retour au début de la page" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/a24-1r1/">Présentation du cours</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/a24-1r1/preparation">Préparation à vos cours et laboratoires</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/a24-1r1/theorie">Théorie</a><button aria-label="Développer la catégorie &#x27;Théorie&#x27; de la barre latérale" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/a24-1r1/procedures">Procédures</a><button aria-label="Développer la catégorie &#x27;Procédures&#x27; de la barre latérale" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" href="/a24-1r1/laboratoire">Laboratoires</a><button aria-label="Réduire la catégorie &#x27;Laboratoires&#x27; de la barre latérale" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/a24-1r1/laboratoires/laboratoire-1">Semaine 1</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/a24-1r1/laboratoires/laboratoire-2">Semaine 2</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/a24-1r1/laboratoires/laboratoire-3">Semaine 3</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/a24-1r1/laboratoires/laboratoire-4">Semaine 4 (Éval 1)</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/a24-1r1/laboratoires/laboratoire-5">Semaine 5</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/a24-1r1/laboratoires/laboratoire-6">Semaine 6</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/a24-1r1/exercices">Exercices</a><button aria-label="Développer la catégorie &#x27;Exercices&#x27; de la barre latérale" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav><button type="button" title="Réduire le menu latéral" aria-label="Réduire le menu latéral" class="button button--secondary button--outline collapseSidebarButton_PEFL"><svg width="20" height="20" aria-hidden="true" class="collapseSidebarButtonIcon_kv0_"><g fill="#7a7a7a"><path d="M9.992 10.023c0 .2-.062.399-.172.547l-4.996 7.492a.982.982 0 01-.828.454H1c-.55 0-1-.453-1-1 0-.2.059-.403.168-.551l4.629-6.942L.168 3.078A.939.939 0 010 2.528c0-.548.45-.997 1-.997h2.996c.352 0 .649.18.828.45L9.82 9.472c.11.148.172.347.172.55zm0 0"></path><path d="M19.98 10.023c0 .2-.058.399-.168.547l-4.996 7.492a.987.987 0 01-.828.454h-3c-.547 0-.996-.453-.996-1 0-.2.059-.403.168-.551l4.625-6.942-4.625-6.945a.939.939 0 01-.168-.55 1 1 0 01.996-.997h3c.348 0 .649.18.828.45l4.996 7.492c.11.148.168.347.168.55zm0 0"></path></g></svg></button></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Fil d&#x27;Ariane"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Page d&#x27;accueil" class="breadcrumbs__link" href="/a24-1r1/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item"><a class="breadcrumbs__link" itemprop="item" href="/a24-1r1/laboratoire"><span itemprop="name">Laboratoires</span></a><meta itemprop="position" content="1"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">Semaine 6</span><meta itemprop="position" content="2"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">Sur cette page</button></div><div class="theme-doc-markdown markdown"><h1>Laboratoire de la semaine 6</h1>
+<p>Vous devez avoir absolument votre clé USB pour ce laboratoire.</p>
+<p>Il est important que les 2 étudiants de l&#x27;équipe effectuent des manipulations.</p>
+<p>Seulement l&#x27;étudiant qui a le bracelet antistatique est autorisé à installer/retirer la pièce de l&#x27;ordinateur.</p>
+<p>Voici l&#x27;emplacement des pièces dans votre espace de travail</p>
+<ul>
+<li>
+<p>1er tiroir</p>
+<ul>
+<li>Clavier</li>
+<li>Souris</li>
+<li>Tournevis</li>
+</ul>
+</li>
+<li>
+<p>2e tiroir</p>
+<ul>
+<li>Disques SSD et HDD</li>
+<li>Boitiers convertisseurs</li>
+<li>Support bleu pour les disques internes</li>
+<li>Câbles de données SATA</li>
+</ul>
+</li>
+<li>
+<p>3e tiroir</p>
+<ul>
+<li>Lecteur DVD</li>
+<li>Tiroir SATA</li>
+<li>Mémoire vive</li>
+</ul>
+</li>
+<li>
+<p>Tablette</p>
+<ul>
+<li>Blocs d&#x27;alimentation</li>
+</ul>
+</li>
+</ul>
+<div class="theme-admonition theme-admonition-danger admonition_xJq3 alert alert--danger"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M5.05.31c.81 2.17.41 3.38-.52 4.31C3.55 5.67 1.98 6.45.9 7.98c-1.45 2.05-1.7 6.53 3.53 7.7-2.2-1.16-2.67-4.52-.3-6.61-.61 2.03.53 3.33 1.94 2.86 1.39-.47 2.3.53 2.27 1.67-.02.78-.31 1.44-1.13 1.81 3.42-.59 4.78-3.42 4.78-5.56 0-2.84-2.53-3.22-1.25-5.61-1.52.13-2.03 1.13-1.89 2.75.09 1.08-1.02 1.8-1.86 1.33-.67-.41-.66-1.19-.06-1.78C8.18 5.31 8.68 2.45 5.05.32L5.03.3l.02.01z"></path></svg></span>Important</div><div class="admonitionContent_BuS1"><p>Faites l&#x27;inventaire des pièces nécessaires avant de débuter une configuration.</p><p>Rangez les pièces non nécessaires dans le bon emplacement.</p><p>Si vous avez beaucoup de pièces non nécessaires sur la table, vous risquez de les abimer et de les chercher inefficacement.</p><p>Si vous manquez d&#x27;espace sur votre table de travail, mettez les pièces à utiliser sur la tablette.</p><p>Rangez vos sacs sous la table de travail.</p><p>Utilisez un portable par équipe pour libérer de l&#x27;espace sur la table de travail.</p></div></div>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="1-réponse-de-lanalyse-du-matériel-du-laboratoire-5">1. Réponse de l&#x27;analyse du matériel du laboratoire 5<a class="hash-link" aria-label="Lien direct vers 1. Réponse de l&#x27;analyse du matériel du laboratoire 5" title="Lien direct vers 1. Réponse de l&#x27;analyse du matériel du laboratoire 5" href="/a24-1r1/laboratoires/laboratoire-6#1-réponse-de-lanalyse-du-matériel-du-laboratoire-5">​</a></h2>
+<p>Voici les réponses pour chacune des questions de l&#x27;analyse du matériel du laboratoire 5.</p>
+<p>Vous pouvez comparer avec ce que vous avez noté.</p>
+<p>Pour chacune des réponses, il y aura une image de l&#x27;endroit où trouver l&#x27;information dans <strong>HWiNFO</strong> et <strong>RamCheck (WMIC)</strong>.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="11-identifiez-la-configuration-de-la-mémoire-vive">1.1. Identifiez la configuration de la mémoire vive.<a class="hash-link" aria-label="Lien direct vers 1.1. Identifiez la configuration de la mémoire vive." title="Lien direct vers 1.1. Identifiez la configuration de la mémoire vive." href="/a24-1r1/laboratoires/laboratoire-6#11-identifiez-la-configuration-de-la-mémoire-vive">​</a></h3>
+<ol>
+<li>
+<p>Identifiez la capacité totale installée dans l&#x27;ordinateur : 16 Go</p>
+<p><img decoding="async" loading="lazy" src="/a24-1r1/assets/images/rep_ram_total_hw-195266579d7a62898acc192d64cde10c.png" width="1336" height="145" class="img_ev3q"></p>
+</li>
+<li>
+<p>Identifiez la capacité, le fournisseur et la marque de chaque barrette.</p>
+</li>
+</ol>
+<table><thead><tr><th>DIMM (Orange)</th><th>Ligne (Rose)</th><th>Capacité (Jaune)</th><th>Fournisseur (Bleu)</th><th>Modèle (Vert)</th></tr></thead><tbody><tr><td>3</td><td>0</td><td>4 GB</td><td>Micron</td><td>8KTF51264AZ-1G6E1</td></tr><tr><td>1</td><td>1</td><td>4 GB</td><td>Kingston</td><td>K531R8-HYA</td></tr><tr><td>4</td><td>2</td><td>4 GB</td><td>Micron</td><td>8KTF51264AZ-1G6E1</td></tr><tr><td>2</td><td>3</td><td>4 GB</td><td>Kingston</td><td>K531R8-HYA</td></tr></tbody></table>
+<p>Il est préférable d&#x27;utiliser le <strong>DIMM</strong> pour confirmer notre configuration, car c&#x27;est le numéro qui est inscrit sur la carte-mère pour les modèles d&#x27;ordinateur que nous utiliserons en laboratoire. La commande <strong>RamCheck</strong> permet de l&#x27;obtenir pour ce modèle.</p>
+<p>La <strong>ligne (Bank Label)</strong> correspond à l&#x27;emplacement physique. Dans les ordinateurs que nous utiliserons en laboratoire, la ligne 0 est celle le plus près du processeur et la ligne 3 la plus éloignée.</p>
+<p><img decoding="async" loading="lazy" src="/a24-1r1/assets/images/rep_info_ram_rc-b298036a54cd50d592383510d90056ff.png" width="568" height="98" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" src="data:image/png;base64,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" width="472" height="84" class="img_ev3q"></p>
+<div class="theme-admonition theme-admonition-caution admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>attention</div><div class="admonitionContent_BuS1"><p>Il est possible que votre réponse soit inversée.</p><ul>
+<li>
+<p>Micron se retrouve dans la <strong>DIMM1/Ligne1</strong> et <strong>DIMM2/Ligne3</strong></p>
+</li>
+<li>
+<p>Kingston dans la <strong>DIMM3/Ligne0</strong> et <strong>DIMM4/Ligne2</strong>.</p>
+</li>
+</ul><p>Cette configuration est également valide.</p></div></div>
+<ol start="3">
+<li>Est-ce qu&#x27;elle respecte les principes du <strong>double canal</strong> ? Corrigez le problème si ce n&#x27;est pas correct.</li>
+</ol>
+<p>​	Dans l&#x27;image ci-dessous, la paire doit être identique pour <strong>DIMM3/Ligne0</strong> et <strong>DIMM4/Ligne2</strong> (Jaune). et <strong>DIMM1/Ligne1</strong> et <strong>DIMM2/Ligne3</strong> (Vert).</p>
+<p><img decoding="async" loading="lazy" src="data:image/png;base64,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" width="568" height="83" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" src="/a24-1r1/assets/images/rep_double_ram_hw-11f4a3dda16e3fe25d80582b8a937166.png" width="472" height="84" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="12-identifiez-linformation-du-disque-ssd">1.2. Identifiez l&#x27;information du disque SSD.<a class="hash-link" aria-label="Lien direct vers 1.2. Identifiez l&#x27;information du disque SSD." title="Lien direct vers 1.2. Identifiez l&#x27;information du disque SSD." href="/a24-1r1/laboratoires/laboratoire-6#12-identifiez-linformation-du-disque-ssd">​</a></h3>
+<ol>
+<li>
+<p><strong>Modèle</strong> (Jaune) : SanDisk X600 2.5 7MM SATA 256GB</p>
+</li>
+<li>
+<p><strong>Capacité</strong> (Orange) : 256 Go</p>
+</li>
+<li>
+<p><strong>Technologie</strong> (Vert) : SSD (non rotatif)</p>
+<p><img decoding="async" loading="lazy" src="/a24-1r1/assets/images/rep_info_ssd-fff70e9a2566b8f30583588f0b677c00.png" width="1367" height="381" class="img_ev3q"></p>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="13-identifiez-linformation-du-disque-hdd">1.3. Identifiez l&#x27;information du disque HDD.<a class="hash-link" aria-label="Lien direct vers 1.3. Identifiez l&#x27;information du disque HDD." title="Lien direct vers 1.3. Identifiez l&#x27;information du disque HDD." href="/a24-1r1/laboratoires/laboratoire-6#13-identifiez-linformation-du-disque-hdd">​</a></h3>
+<ol>
+<li>
+<p><strong>Modèle</strong> (Jaune) : Seagate ST3500418AS (Il peut avoir des variations dans le code alpha numérique, car quelques unités ne sont pas tout à fait du même modèle)</p>
+</li>
+<li>
+<p><strong>Capacité</strong> (Orange) : 500 Go</p>
+</li>
+<li>
+<p><strong>Technologie</strong> (Vert) : HDD (7200 RPM)</p>
+<p><img decoding="async" loading="lazy" src="/a24-1r1/assets/images/rep_info_hdd-949dba90848773dad283932d4c0b33b9.png" width="1264" height="364" class="img_ev3q"></p>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="14-identifiez-linformation-du-processeur">1.4. Identifiez l&#x27;information du processeur.<a class="hash-link" aria-label="Lien direct vers 1.4. Identifiez l&#x27;information du processeur." title="Lien direct vers 1.4. Identifiez l&#x27;information du processeur." href="/a24-1r1/laboratoires/laboratoire-6#14-identifiez-linformation-du-processeur">​</a></h3>
+<ol>
+<li>
+<p><strong>Nom du processeur</strong> (Jaune) : Intel Core i7-4790</p>
+</li>
+<li>
+<p><strong>Fréquence</strong> (Orange) : 3600.0 MHz ou 3.6 GHz</p>
+</li>
+<li>
+<p><strong>Nombre de coeurs</strong> (Vert) : 4</p>
+</li>
+<li>
+<p><strong>Nombre de processeurs logiques</strong> (rose) : 8</p>
+<p><img decoding="async" loading="lazy" src="/a24-1r1/assets/images/rep_info_cpu-13049ab05e839e4be1406224274ab81d.png" width="1280" height="572" class="img_ev3q"></p>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="15-identifiez-le-nombre-de-cartes-réseau">1.5. Identifiez le nombre de cartes réseau.<a class="hash-link" aria-label="Lien direct vers 1.5. Identifiez le nombre de cartes réseau." title="Lien direct vers 1.5. Identifiez le nombre de cartes réseau." href="/a24-1r1/laboratoires/laboratoire-6#15-identifiez-le-nombre-de-cartes-réseau">​</a></h3>
+<p>Il y a 1 carte réseau.</p>
+<p><img decoding="async" loading="lazy" src="/a24-1r1/assets/images/rep_info_nic-b2f7ecced12efa953512600e2d7ed85f.png" width="391" height="213" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="16-vérification-des-ports-sata">1.6. Vérification des ports SATA<a class="hash-link" aria-label="Lien direct vers 1.6. Vérification des ports SATA" title="Lien direct vers 1.6. Vérification des ports SATA" href="/a24-1r1/laboratoires/laboratoire-6#16-vérification-des-ports-sata">​</a></h3>
+<p>Cette question n&#x27;était pas dans le laboratoire, mais voici ce que vous devez voir dans le <strong>BIOS</strong>.</p>
+<p><img decoding="async" loading="lazy" src="/a24-1r1/assets/images/rep_bios_sata-f648157e72b8d53141531ba8db4ff691.jpg" width="1158" height="711" class="img_ev3q"></p>
+<p>En jaune, c&#x27;est le SSD SanDisk X600 2.5 7MM SATA 256GB.</p>
+<p>En vert, c&#x27;est le HDD Seagate ST3500418AS 500 Go</p>
+<p><strong>ST</strong> veut dire <strong>Seagate</strong> dans les numéros de modèle.</p>
+<div class="theme-admonition theme-admonition-danger admonition_xJq3 alert alert--danger"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M5.05.31c.81 2.17.41 3.38-.52 4.31C3.55 5.67 1.98 6.45.9 7.98c-1.45 2.05-1.7 6.53 3.53 7.7-2.2-1.16-2.67-4.52-.3-6.61-.61 2.03.53 3.33 1.94 2.86 1.39-.47 2.3.53 2.27 1.67-.02.78-.31 1.44-1.13 1.81 3.42-.59 4.78-3.42 4.78-5.56 0-2.84-2.53-3.22-1.25-5.61-1.52.13-2.03 1.13-1.89 2.75.09 1.08-1.02 1.8-1.86 1.33-.67-.41-.66-1.19-.06-1.78C8.18 5.31 8.68 2.45 5.05.32L5.03.3l.02.01z"></path></svg></span>danger</div><div class="admonitionContent_BuS1"><p>Pour le modèle <strong>Optiplex 9020</strong>, ce sera toujours <strong>HDD</strong> qui sera indiqué dans le <strong>BIOS</strong>. Il faut utiliser <strong>HWiNFO</strong> pour confirmer la technologie.</p></div></div>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="2-refaire-la-configuration-dell-optiplex-9020">2. Refaire la configuration Dell Optiplex 9020<a class="hash-link" aria-label="Lien direct vers 2. Refaire la configuration Dell Optiplex 9020" title="Lien direct vers 2. Refaire la configuration Dell Optiplex 9020" href="/a24-1r1/laboratoires/laboratoire-6#2-refaire-la-configuration-dell-optiplex-9020">​</a></h2>
+<p>Vous devez refaire la configuration du dernier laboratoire.</p>
+<p>Vous avez plusieurs pièces à votre disposition. Il est important de prendre les bonnes pièces et d&#x27;utiliser les outils diagnostiques pour la confirmation.</p>
+<p>Comparez ce que vous voyez avec les réponses de la section 1 pour confirmer votre installation. Utilisez <strong>HWiNFO</strong>, <strong>RamCheck(WMIC)</strong> et le <strong>BIOS</strong>.</p>
+<p>Lorsque vous avez vérifié, validé et terminé la configuration à l&#x27;aide des outils, demandez à l&#x27;enseignant de venir confirmer le tout. Il vérifiera avec vous les outils diagnostiques et également s&#x27;il y a des erreurs au niveau des emplacements et de la gestion des câbles.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="21-configuration-à-reproduire">2.1. Configuration à reproduire<a class="hash-link" aria-label="Lien direct vers 2.1. Configuration à reproduire" title="Lien direct vers 2.1. Configuration à reproduire" href="/a24-1r1/laboratoires/laboratoire-6#21-configuration-à-reproduire">​</a></h3>
+<p>Voici la configuration à réaliser.</p>
+<p><strong>Ordinateur</strong> : Optiplex 9020</p>
+<p><strong>Bloc d&#x27;alimentation</strong> : 365 W avec connecteur <strong>Principal P8</strong></p>
+<p><strong>Unité de stockage - Emplacement du bas</strong></p>
+<ul>
+<li>SanDisk 256 Go SSD Format 2.5&quot;</li>
+<li>Port SATA 0</li>
+<li>Câble SATA de données bleu</li>
+</ul>
+<p><strong>Unité de stockage - Emplacement du haut</strong></p>
+<ul>
+<li>Seagate 500 Go HDD</li>
+<li>Port SATA 1</li>
+<li>Câble SATA de données noir</li>
+</ul>
+<p><strong>Mémoire vive</strong></p>
+<ul>
+<li>DIMM1 et DIMM2 : 4 Go Kingston K531R8-HYA</li>
+<li>DIMM3 et DIMM 4 :  4 Go Micron  8KTF51264AZ-1G6E1</li>
+</ul>
+<p><strong>Périphérique cadre avant - Emplacement du bas</strong></p>
+<ul>
+<li>Aucun</li>
+</ul>
+<p><strong>Périphérique cadre avant - Emplacement du haut</strong></p>
+<ul>
+<li>Aucun</li>
+</ul>
+<p><strong>Périphérique PCI/PCIe</strong></p>
+<ul>
+<li>Aucune</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="22-ventoy---uniquement-si-ce-na-pas-été-fait">2.2. Ventoy - Uniquement si ce n&#x27;a pas été fait<a class="hash-link" aria-label="Lien direct vers 2.2. Ventoy - Uniquement si ce n&#x27;a pas été fait" title="Lien direct vers 2.2. Ventoy - Uniquement si ce n&#x27;a pas été fait" href="/a24-1r1/laboratoires/laboratoire-6#22-ventoy---uniquement-si-ce-na-pas-été-fait">​</a></h3>
+<p>Si vous n&#x27;aviez pas faites votre clé USB lors du laboratoire 5, prenez le temps de le faire à cette étape. Référez-vous à la section 4 du laboratoire 5.</p>
+<p>Si vous l&#x27;avez faite, passez à la section suivante</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="3-autres-configurations">3. Autres configurations<a class="hash-link" aria-label="Lien direct vers 3. Autres configurations" title="Lien direct vers 3. Autres configurations" href="/a24-1r1/laboratoires/laboratoire-6#3-autres-configurations">​</a></h2>
+<p>Vous devez réaliser les configurations ci-dessous.</p>
+<p><strong>Corrigez-vous avec les outils diagnostiques. Lorsque vous croyez avoir réalisé correctement le travail, demandez à l&#x27;enseignant de vérifier également. Il s&#x27;assurera de votre compréhension des outils diagnostiques et du respect des emplacements et des câbles.</strong></p>
+<p>Chacune des configurations est pour un client ou un utilisateur de votre entreprise.</p>
+<p>Il est important de respecter les demandes du client.</p>
+<p>Vous avez 6 configurations à effectuer. <strong>Section 3.1 à 3.6</strong>.</p>
+<p>Les éléments de configuration de l&#x27;ordinateur concernent à l&#x27;installation des pièces ci-dessous.</p>
+<ul>
+<li>Mémoire vive</li>
+<li>Unité de stockage</li>
+<li>Périphérique <strong>PCI/PCIe</strong>
+<ul>
+<li>Carte réseau PCI</li>
+<li>Carte réseau PCIe</li>
+<li>Carte réseau sans-fil PCIe</li>
+<li>Carte graphique</li>
+</ul>
+</li>
+<li>Périphérique du cadre avant<!-- -->
+<ul>
+<li>Lecteur DVD</li>
+<li>Tiroir SATA</li>
+</ul>
+</li>
+</ul>
+<p>Pour chacune des configurations, il est important de respecter les éléments ci-dessous.</p>
+<ul>
+<li>Couleur du câble SATA (si spécifié)</li>
+<li>Port SATA</li>
+<li>Emplacement des pièces dans le bon endroit<!-- -->
+<ul>
+<li>Emplacement pour les unités de stockage dans le boitier.</li>
+<li>Emplacement pour des périphériques du cadre avant.</li>
+<li>Emplacement <strong>PCIe</strong> <strong>16x</strong> ou <strong>1x</strong>.</li>
+</ul>
+</li>
+<li>L&#x27;utilisation de la bonne pièce<!-- -->
+<ul>
+<li>Type</li>
+<li>Capacité</li>
+<li>Taille</li>
+<li>Modèle</li>
+<li>Marque</li>
+</ul>
+</li>
+<li>Retirer les câbles SATA non utilisés</li>
+<li>Pour les emplacements inutilisés pour les périphériques du cadre avant et <strong>PCI/PCIe</strong>, il est important de remettre les protecteurs en place pour ne pas avoir accès à l&#x27;intérieur du boitier.</li>
+</ul>
+<p>Pour la configuration de la mémoire vive, elle doit respecter les principes du multi-canal.</p>
+<ul>
+<li>Même fournisseur</li>
+<li>Même modèle</li>
+<li>Même capacité</li>
+</ul>
+<p>Il est possible d&#x27;avoir un nombre impair de mémoires vives.</p>
+<p>Avant de retirer le tiroir SATA, il est important de retirer le disque HDD utilisé pour le test.</p>
+<p>Ne pas tenir compte de la vitesse pour déterminer la performance. L&#x27;utilisation du multi-canal détermine la meilleure performance pour ce laboratoire.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="31-configuration-1">3.1. Configuration 1<a class="hash-link" aria-label="Lien direct vers 3.1. Configuration 1" title="Lien direct vers 3.1. Configuration 1" href="/a24-1r1/laboratoires/laboratoire-6#31-configuration-1">​</a></h3>
+<p><strong>Ordinateur</strong> : Optiplex 9020</p>
+<p><strong>Bloc d&#x27;alimentation</strong> : 365 W avec connecteur <strong>Principal P8</strong></p>
+<p><strong>Unité de stockage - Emplacement du bas</strong></p>
+<ul>
+<li>Western Digital 160 Go HDD Format 3.5&quot;</li>
+<li>Port SATA 0</li>
+<li>Câble SATA de données noir</li>
+</ul>
+<p><strong>Unité de stockage - Emplacement du haut</strong></p>
+<ul>
+<li>Western Digital 500 Go HDD Format 3.5&quot;</li>
+<li>Port SATA 1</li>
+<li>Câble SATA de données noir</li>
+</ul>
+<p><strong>Mémoire vive</strong></p>
+<ul>
+<li>6 Go au total</li>
+<li>Configuration en simple canal. (Utilisez DIMM1 et DIMM3 uniquement)</li>
+</ul>
+<p><strong>Périphérique cadre avant - Emplacement du bas</strong></p>
+<ul>
+<li>Tiroir SATA (Utilisez le disque de 80 Go pour le tester)</li>
+<li>Port SATA 3</li>
+<li>Câble SATA orange</li>
+</ul>
+<p><strong>Périphérique cadre avant - Emplacement du haut</strong></p>
+<ul>
+<li>Aucun</li>
+</ul>
+<p><strong>Périphérique PCI/PCIe</strong></p>
+<ul>
+<li>Carte réseau PCI</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="32-configuration-2">3.2. Configuration 2<a class="hash-link" aria-label="Lien direct vers 3.2. Configuration 2" title="Lien direct vers 3.2. Configuration 2" href="/a24-1r1/laboratoires/laboratoire-6#32-configuration-2">​</a></h3>
+<p><strong>Ordinateur</strong> : Optiplex 9020</p>
+<p><strong>Bloc d&#x27;alimentation</strong> : 265 W avec connecteur <strong>Principal P8</strong></p>
+<p><strong>Unité de stockage - Emplacement du bas</strong></p>
+<ul>
+<li>Seagate 250 Go HDD Format 3.5&quot;</li>
+<li>Port SATA 0</li>
+<li>Câble SATA de données noir</li>
+</ul>
+<p><strong>Unité de stockage - Emplacement du haut</strong></p>
+<ul>
+<li>Samsung 250 Go SSD Format 2.5&quot;</li>
+<li>Port SATA 1</li>
+<li>Câble SATA de données noir</li>
+</ul>
+<p><strong>Mémoire vive</strong></p>
+<ul>
+<li>12 Go au total</li>
+<li>Utiliser seulement de la <strong>Kingston</strong></li>
+</ul>
+<p><strong>Périphérique cadre avant - Emplacement du bas</strong></p>
+<ul>
+<li>Aucun</li>
+</ul>
+<p><strong>Périphérique cadre avant - Emplacement du haut</strong></p>
+<ul>
+<li>Lecteur DVD</li>
+<li>Port SATA 2</li>
+<li>Câble SATA noir</li>
+</ul>
+<p><strong>Périphérique PCI/PCIe</strong></p>
+<ul>
+<li>Carte réseau PCIe - emplacement 1x</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="33-configuration-3">3.3. Configuration 3<a class="hash-link" aria-label="Lien direct vers 3.3. Configuration 3" title="Lien direct vers 3.3. Configuration 3" href="/a24-1r1/laboratoires/laboratoire-6#33-configuration-3">​</a></h3>
+<p><strong>Ordinateur</strong> : Optiplex 9020</p>
+<p><strong>Bloc d&#x27;alimentation</strong> : 265 W avec connecteur <strong>Principal P8</strong></p>
+<p><strong>Unité de stockage - Emplacement du bas</strong></p>
+<ul>
+<li>Micron 256 Go SSD Format 2.5&quot;</li>
+<li>Port SATA 0</li>
+<li>Câble SATA de données bleu</li>
+</ul>
+<p><strong>Unité de stockage - Emplacement du haut</strong></p>
+<ul>
+<li>Intel 256 Go SSD Format 2.5&quot;</li>
+<li>Port SATA 1</li>
+<li>Câble SATA de données noir</li>
+</ul>
+<p><strong>Mémoire vive</strong></p>
+<ul>
+<li>12 Go au total</li>
+<li>Doit être entièrement en double canal (Utilisez 4 barrettes)</li>
+</ul>
+<p><strong>Périphérique cadre avant - Emplacement du bas</strong></p>
+<ul>
+<li>Aucun</li>
+</ul>
+<p><strong>Périphérique cadre avant - Emplacement du haut</strong></p>
+<ul>
+<li>Lecteur DVD</li>
+<li>Port SATA 2</li>
+<li>Câble SATA noir</li>
+</ul>
+<p><strong>Périphérique PCI/PCIe</strong></p>
+<ul>
+<li>Carte réseau sans-fil PCIe - emplacement 16x</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="34-configuration-4">3.4. Configuration 4<a class="hash-link" aria-label="Lien direct vers 3.4. Configuration 4" title="Lien direct vers 3.4. Configuration 4" href="/a24-1r1/laboratoires/laboratoire-6#34-configuration-4">​</a></h3>
+<p><strong>Ordinateur</strong> : Optiplex 9020</p>
+<p><strong>Bloc d&#x27;alimentation</strong> : 365W</p>
+<p><strong>Unité de stockage - Emplacement du bas</strong></p>
+<ul>
+<li>Micron 256 Go SSD Format 2.5&quot;</li>
+<li>Port SATA 0</li>
+<li>Câble SATA de données bleu</li>
+</ul>
+<p><strong>Unité de stockage - Emplacement du haut</strong></p>
+<ul>
+<li>Intel 256 Go SSD Format 2.5&quot;</li>
+<li>Port SATA 1</li>
+<li>Câble SATA de données noir</li>
+</ul>
+<p><strong>Mémoire vive</strong></p>
+<ul>
+<li>4 Go au total</li>
+<li>Utiliser seulement de la SK Hynix</li>
+</ul>
+<p><strong>Périphérique cadre avant - Emplacement du bas</strong></p>
+<ul>
+<li>Lecteur DVD</li>
+<li>Port SATA 3</li>
+<li>Câble SATA orange</li>
+</ul>
+<p><strong>Périphérique cadre avant - Emplacement du haut</strong></p>
+<ul>
+<li>Tiroir SATA</li>
+<li>Port SATA 2</li>
+<li>Câble SATA orange</li>
+</ul>
+<p><strong>Périphérique PCI/PCIe</strong></p>
+<ul>
+<li>Carte réseau sans-fil PCIe - emplacement 1x</li>
+<li>Carte réseau PCI</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="35-configuration-5">3.5. Configuration 5<a class="hash-link" aria-label="Lien direct vers 3.5. Configuration 5" title="Lien direct vers 3.5. Configuration 5" href="/a24-1r1/laboratoires/laboratoire-6#35-configuration-5">​</a></h3>
+<p><strong>Ordinateur</strong> : Optiplex 9020</p>
+<p><strong>Bloc d&#x27;alimentation</strong> : 365W avec connecteur <strong>Principal P8</strong></p>
+<p><strong>Unité de stockage - Emplacement du bas</strong></p>
+<ul>
+<li>Disque SSD que vous n&#x27;avez pas utilisé dans votre inventaire.</li>
+<li>Port SATA 0</li>
+<li>Câble SATA de données noir</li>
+</ul>
+<p><strong>Unité de stockage - Emplacement du haut</strong></p>
+<ul>
+<li>Aucun</li>
+</ul>
+<p><strong>Mémoire vive</strong></p>
+<ul>
+<li>8 Go au total</li>
+<li>Utilisez uniquement des barrettes Kingston dont le modèle se termine par <strong>MIN</strong>.</li>
+</ul>
+<p><strong>Périphérique cadre avant - Emplacement du bas</strong></p>
+<ul>
+<li>Aucun</li>
+</ul>
+<p><strong>Périphérique cadre avant - Emplacement du haut</strong></p>
+<ul>
+<li>Aucun</li>
+</ul>
+<p><strong>Périphérique PCI/PCIe</strong></p>
+<ul>
+<li>Carte graphique</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="36-configuration-6">3.6. Configuration 6<a class="hash-link" aria-label="Lien direct vers 3.6. Configuration 6" title="Lien direct vers 3.6. Configuration 6" href="/a24-1r1/laboratoires/laboratoire-6#36-configuration-6">​</a></h3>
+<p><strong>Ordinateur</strong> : Optiplex 9020</p>
+<p><strong>Bloc d&#x27;alimentation</strong> : 365W avec connecteur <strong>Principal P8</strong></p>
+<p><strong>Unité de stockage - Emplacement du bas</strong></p>
+<ul>
+<li>Aucun</li>
+</ul>
+<p><strong>Unité de stockage - Emplacement du haut</strong></p>
+<ul>
+<li>Disque HDD que vous n&#x27;avez pas utilisé dans votre inventaire (Pas le 80 Go).</li>
+<li>Port SATA 0</li>
+<li>Câble SATA de données bleu</li>
+</ul>
+<p><strong>Mémoire vive</strong></p>
+<ul>
+<li>16 Go au total</li>
+<li>Effectuez la configuration optimale (4 barrettes identiques)</li>
+</ul>
+<p><strong>Périphérique cadre avant - Emplacement du bas</strong></p>
+<ul>
+<li>Aucun</li>
+</ul>
+<p><strong>Périphérique cadre avant - Emplacement du haut</strong></p>
+<ul>
+<li>Aucun</li>
+</ul>
+<p><strong>Périphérique PCI/PCIe</strong></p>
+<ul>
+<li>Carte graphique.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="4-extra">4. Extra<a class="hash-link" aria-label="Lien direct vers 4. Extra" title="Lien direct vers 4. Extra" href="/a24-1r1/laboratoires/laboratoire-6#4-extra">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="41-bloc-dalimentation-p24">4.1. Bloc d&#x27;alimentation P24<a class="hash-link" aria-label="Lien direct vers 4.1. Bloc d&#x27;alimentation P24" title="Lien direct vers 4.1. Bloc d&#x27;alimentation P24" href="/a24-1r1/laboratoires/laboratoire-6#41-bloc-dalimentation-p24">​</a></h3>
+<p>Demandez l&#x27;adaptateur à l&#x27;enseignant pour utiliser le connecteur P24.</p>
+<p><strong>Ordinateur</strong> : Optiplex 9020</p>
+<p><strong>Bloc d&#x27;alimentation</strong> : Modèle standard P24 - Demandez l&#x27;adaptateur à l&#x27;enseignant</p>
+<p><strong>Unité de stockage - Emplacement du bas</strong></p>
+<ul>
+<li>Aucun</li>
+</ul>
+<p><strong>Unité de stockage - Emplacement du haut</strong></p>
+<ul>
+<li>Aucun</li>
+</ul>
+<p><strong>Mémoire vive</strong></p>
+<ul>
+<li>4 Go au total</li>
+</ul>
+<p><strong>Périphérique cadre avant - Emplacement du bas</strong></p>
+<ul>
+<li>Aucun</li>
+</ul>
+<p><strong>Périphérique cadre avant - Emplacement du haut</strong></p>
+<ul>
+<li>Aucun</li>
+</ul>
+<p><strong>Périphérique PCI/PCIe</strong></p>
+<ul>
+<li>Aucun</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="42-carte-vidéo-mystère">4.2. Carte vidéo mystère<a class="hash-link" aria-label="Lien direct vers 4.2. Carte vidéo mystère" title="Lien direct vers 4.2. Carte vidéo mystère" href="/a24-1r1/laboratoires/laboratoire-6#42-carte-vidéo-mystère">​</a></h3>
+<p>Demandez la carte vidéo mystère à l&#x27;enseignant. Quel est le nom du connecteur vidéo ?</p>
+<p><strong>Ordinateur</strong> : Optiplex 9020</p>
+<p><strong>Bloc d&#x27;alimentation</strong> : Modèle standard P24</p>
+<p><strong>Unité de stockage - Emplacement du bas</strong></p>
+<ul>
+<li>Aucun</li>
+</ul>
+<p><strong>Unité de stockage - Emplacement du haut</strong></p>
+<ul>
+<li>Aucun</li>
+</ul>
+<p><strong>Mémoire vive</strong></p>
+<ul>
+<li>4 Go</li>
+</ul>
+<p><strong>Périphérique cadre avant - Emplacement du bas</strong></p>
+<ul>
+<li>Aucun</li>
+</ul>
+<p><strong>Périphérique cadre avant - Emplacement du haut</strong></p>
+<ul>
+<li>Aucun</li>
+</ul>
+<p><strong>Périphérique PCI/PCIe</strong></p>
+<ul>
+<li>Carte vidéo mystère</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="43-support-25">4.3. Support 2.5&quot;<a class="hash-link" aria-label="Lien direct vers 4.3. Support 2.5&quot;" title="Lien direct vers 4.3. Support 2.5&quot;" href="/a24-1r1/laboratoires/laboratoire-6#43-support-25">​</a></h3>
+<p>Demandez le support 2.5&quot; spécial pour le disque SSD.</p>
+<p><strong>Ordinateur</strong> : Optiplex 9020</p>
+<p><strong>Bloc d&#x27;alimentation</strong> : Modèle standard P24</p>
+<p><strong>Unité de stockage - Emplacement du bas</strong></p>
+<ul>
+<li>Samsung 250 Go SSD Format 2.5&quot;</li>
+<li>Port SATA 0</li>
+<li>Câble SATA de données noir plat</li>
+<li>Utilisez le doubleur pour le câble d&#x27;alimentation SATA</li>
+</ul>
+<p><strong>Unité de stockage - Emplacement du haut</strong></p>
+<ul>
+<li>Aucun</li>
+</ul>
+<p><strong>Mémoire vive</strong></p>
+<ul>
+<li>4 Go</li>
+</ul>
+<p><strong>Périphérique cadre avant - Emplacement du bas</strong></p>
+<ul>
+<li>Aucun</li>
+</ul>
+<p><strong>Périphérique cadre avant - Emplacement du haut</strong></p>
+<ul>
+<li>Aucun</li>
+</ul>
+<p><strong>Périphérique PCI/PCIe</strong></p>
+<ul>
+<li>Aucun</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="mémoire-vive-mystère">Mémoire vive mystère<a class="hash-link" aria-label="Lien direct vers Mémoire vive mystère" title="Lien direct vers Mémoire vive mystère" href="/a24-1r1/laboratoires/laboratoire-6#mémoire-vive-mystère">​</a></h3>
+<p>Demandez la mémoire vive mystère à l&#x27;enseignant.</p>
+<p><strong>Ordinateur</strong> : Optiplex 9020</p>
+<p><strong>Bloc d&#x27;alimentation</strong> : Modèle standard P24</p>
+<p><strong>Unité de stockage - Emplacement du bas</strong></p>
+<ul>
+<li>Aucun</li>
+</ul>
+<p><strong>Unité de stockage - Emplacement du haut</strong></p>
+<ul>
+<li>Aucun</li>
+</ul>
+<p><strong>Mémoire vive</strong></p>
+<ul>
+<li>Mémoire vive mystère</li>
+</ul>
+<p><strong>Périphérique cadre avant - Emplacement du bas</strong></p>
+<ul>
+<li>Aucun</li>
+</ul>
+<p><strong>Périphérique cadre avant - Emplacement du haut</strong></p>
+<ul>
+<li>Aucun</li>
+</ul>
+<p><strong>Périphérique PCI/PCIe</strong></p>
+<ul>
+<li>Aucun</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="5-démontage-et-rangement">5. Démontage et Rangement<a class="hash-link" aria-label="Lien direct vers 5. Démontage et Rangement" title="Lien direct vers 5. Démontage et Rangement" href="/a24-1r1/laboratoires/laboratoire-6#5-démontage-et-rangement">​</a></h2>
+<ol>
+<li>
+<p>Enlevez toutes les pièces ci-dessous de l&#x27;ordinateur <strong>Optiplex 9020</strong>.</p>
+<ul>
+<li>
+<p>Mémoire vive</p>
+</li>
+<li>
+<p>Disques SSD et HDD</p>
+</li>
+<li>
+<p>Câbles de données SATA</p>
+</li>
+<li>
+<p>Lecteur DVD</p>
+</li>
+<li>
+<p>Tiroir SATA</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Remettez les protecteurs manquants pour l&#x27;ordinateur <strong>Optiplex 9020</strong>.</p>
+<ul>
+<li>
+<p>Cadre avant</p>
+</li>
+<li>
+<p>PCI/PCIe</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Disque interne - Support et boitier convertisseur.</p>
+<ul>
+<li>
+<p>Retirez les disques à l&#x27;intérieur des boitiers convertisseurs.</p>
+</li>
+<li>
+<p>Retirez les disques du support bleu pour les disques internes</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Placez la mémoire vive dans le sac antistatique.</p>
+</li>
+<li>
+<p>Rangez les pièces et équipements comme ceci.</p>
+<ul>
+<li>
+<p>1er tiroir</p>
+<ul>
+<li>Clavier</li>
+<li>Souris</li>
+<li>Tournevis</li>
+</ul>
+</li>
+<li>
+<p>2e tiroir</p>
+<ul>
+<li>Disques SSD et HDD</li>
+<li>Boitiers convertisseurs</li>
+<li>Support bleu pour les disques internes</li>
+<li>Câbles de données SATA</li>
+</ul>
+</li>
+<li>
+<p>3e tiroir</p>
+<ul>
+<li>Lecteur DVD</li>
+<li>Tiroir SATA</li>
+<li>Mémoire vive</li>
+</ul>
+</li>
+<li>
+<p>Tablette</p>
+<ul>
+<li>Blocs d&#x27;alimentation</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Pages de documentation"><a class="pagination-nav__link pagination-nav__link--prev" href="/a24-1r1/laboratoires/laboratoire-5"><div class="pagination-nav__sublabel">Précédent</div><div class="pagination-nav__label">Semaine 5</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/a24-1r1/exercices"><div class="pagination-nav__sublabel">Suivant</div><div class="pagination-nav__label">Exercices</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a class="table-of-contents__link toc-highlight" href="/a24-1r1/laboratoires/laboratoire-6#1-réponse-de-lanalyse-du-matériel-du-laboratoire-5">1. Réponse de l&#39;analyse du matériel du laboratoire 5</a><ul><li><a class="table-of-contents__link toc-highlight" href="/a24-1r1/laboratoires/laboratoire-6#11-identifiez-la-configuration-de-la-mémoire-vive">1.1. Identifiez la configuration de la mémoire vive.</a></li><li><a class="table-of-contents__link toc-highlight" href="/a24-1r1/laboratoires/laboratoire-6#12-identifiez-linformation-du-disque-ssd">1.2. Identifiez l&#39;information du disque SSD.</a></li><li><a class="table-of-contents__link toc-highlight" href="/a24-1r1/laboratoires/laboratoire-6#13-identifiez-linformation-du-disque-hdd">1.3. Identifiez l&#39;information du disque HDD.</a></li><li><a class="table-of-contents__link toc-highlight" href="/a24-1r1/laboratoires/laboratoire-6#14-identifiez-linformation-du-processeur">1.4. Identifiez l&#39;information du processeur.</a></li><li><a class="table-of-contents__link toc-highlight" href="/a24-1r1/laboratoires/laboratoire-6#15-identifiez-le-nombre-de-cartes-réseau">1.5. Identifiez le nombre de cartes réseau.</a></li><li><a class="table-of-contents__link toc-highlight" href="/a24-1r1/laboratoires/laboratoire-6#16-vérification-des-ports-sata">1.6. Vérification des ports SATA</a></li></ul></li><li><a class="table-of-contents__link toc-highlight" href="/a24-1r1/laboratoires/laboratoire-6#2-refaire-la-configuration-dell-optiplex-9020">2. Refaire la configuration Dell Optiplex 9020</a><ul><li><a class="table-of-contents__link toc-highlight" href="/a24-1r1/laboratoires/laboratoire-6#21-configuration-à-reproduire">2.1. Configuration à reproduire</a></li><li><a class="table-of-contents__link toc-highlight" href="/a24-1r1/laboratoires/laboratoire-6#22-ventoy---uniquement-si-ce-na-pas-été-fait">2.2. Ventoy - Uniquement si ce n&#39;a pas été fait</a></li></ul></li><li><a class="table-of-contents__link toc-highlight" href="/a24-1r1/laboratoires/laboratoire-6#3-autres-configurations">3. Autres configurations</a><ul><li><a class="table-of-contents__link toc-highlight" href="/a24-1r1/laboratoires/laboratoire-6#31-configuration-1">3.1. Configuration 1</a></li><li><a class="table-of-contents__link toc-highlight" href="/a24-1r1/laboratoires/laboratoire-6#32-configuration-2">3.2. Configuration 2</a></li><li><a class="table-of-contents__link toc-highlight" href="/a24-1r1/laboratoires/laboratoire-6#33-configuration-3">3.3. Configuration 3</a></li><li><a class="table-of-contents__link toc-highlight" href="/a24-1r1/laboratoires/laboratoire-6#34-configuration-4">3.4. Configuration 4</a></li><li><a class="table-of-contents__link toc-highlight" href="/a24-1r1/laboratoires/laboratoire-6#35-configuration-5">3.5. Configuration 5</a></li><li><a class="table-of-contents__link toc-highlight" href="/a24-1r1/laboratoires/laboratoire-6#36-configuration-6">3.6. Configuration 6</a></li></ul></li><li><a class="table-of-contents__link toc-highlight" href="/a24-1r1/laboratoires/laboratoire-6#4-extra">4. Extra</a><ul><li><a class="table-of-contents__link toc-highlight" href="/a24-1r1/laboratoires/laboratoire-6#41-bloc-dalimentation-p24">4.1. Bloc d&#39;alimentation P24</a></li><li><a class="table-of-contents__link toc-highlight" href="/a24-1r1/laboratoires/laboratoire-6#42-carte-vidéo-mystère">4.2. Carte vidéo mystère</a></li><li><a class="table-of-contents__link toc-highlight" href="/a24-1r1/laboratoires/laboratoire-6#43-support-25">4.3. Support 2.5&quot;</a></li><li><a class="table-of-contents__link toc-highlight" href="/a24-1r1/laboratoires/laboratoire-6#mémoire-vive-mystère">Mémoire vive mystère</a></li></ul></li><li><a class="table-of-contents__link toc-highlight" href="/a24-1r1/laboratoires/laboratoire-6#5-démontage-et-rangement">5. Démontage et Rangement</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">François St-Hilaire - Automne 2024 - Cégep de Drummondville</div></div></div></footer></div>
+</body>
+</html>
