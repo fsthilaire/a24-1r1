@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.6.0">
 <title data-rh="true">Semaine 13 - Invite de commandes | Initiation à l’ordinateur et ses composantes - Automne 2024</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://fsthilaire.github.io/a24-1r1/exercices/semaine13-cmd"><meta data-rh="true" property="og:locale" content="fr"><meta data-rh="true" name="docusaurus_locale" content="fr"><meta data-rh="true" name="docsearch:language" content="fr"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Semaine 13 - Invite de commandes | Initiation à l’ordinateur et ses composantes - Automne 2024"><meta data-rh="true" name="description" content="Vous devez faire les exercices à partir de votre portable."><meta data-rh="true" property="og:description" content="Vous devez faire les exercices à partir de votre portable."><link data-rh="true" rel="icon" href="/a24-1r1/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://fsthilaire.github.io/a24-1r1/exercices/semaine13-cmd"><link data-rh="true" rel="alternate" href="https://fsthilaire.github.io/a24-1r1/exercices/semaine13-cmd" hreflang="fr"><link data-rh="true" rel="alternate" href="https://fsthilaire.github.io/a24-1r1/exercices/semaine13-cmd" hreflang="x-default"><link data-rh="true" rel="preconnect" href="https://88N38QIZB4-dsn.algolia.net" crossorigin="anonymous"><link rel="search" type="application/opensearchdescription+xml" title="Initiation à l’ordinateur et ses composantes - Automne 2024" href="/a24-1r1/opensearch.xml"><link rel="stylesheet" href="/a24-1r1/assets/css/styles.d01f36c3.css">
-<script src="/a24-1r1/assets/js/runtime~main.31ff8ca6.js" defer="defer"></script>
+<script src="/a24-1r1/assets/js/runtime~main.261963e0.js" defer="defer"></script>
 <script src="/a24-1r1/assets/js/main.f586027a.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -152,17 +152,22 @@ Ligne 3 : Orange</p>
 <details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary><b>Réponse</b></summary><div><div class="collapsibleContent_i85q"><div><p>~/excmd1/rep1$ cd ~/excmd1/wc1</p></div></div></div></details>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="numéro-22">Numéro 2.2<a href="#numéro-22" class="hash-link" aria-label="Lien direct vers Numéro 2.2" title="Lien direct vers Numéro 2.2">​</a></h3>
 <p>Affichez tous les fichiers qui ont l&#x27;extension <strong><code>.txt</code></strong>. Il doit avoir 280 fichiers.</p>
-<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary><b>Réponse</b></summary><div><div class="collapsibleContent_i85q"><div><p>~/excmd1/wc1$ ls *.txt</p></div></div></div></details>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary><b>Réponse</b></summary><div><div class="collapsibleContent_i85q"><div><p>~/excmd1/wc1$ ls *.txt<br>
+~/excmd1/wc1$ ls *.txt|wc</p></div></div></div></details>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="numéro-23">Numéro 2.3<a href="#numéro-23" class="hash-link" aria-label="Lien direct vers Numéro 2.3" title="Lien direct vers Numéro 2.3">​</a></h3>
 <p>Affichez tous les fichiers qui débutent par <strong><code>doc</code></strong>. Il doit avoir 180 fichiers.</p>
-<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary><b>Réponse</b></summary><div><div class="collapsibleContent_i85q"><div><p>~/excmd1/wc1$ ls doc*</p></div></div></div></details>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary><b>Réponse</b></summary><div><div class="collapsibleContent_i85q"><div><p>~/excmd1/wc1$ ls doc*<br>
+~/excmd1/wc1$ ls doc*|wc</p></div></div></div></details>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="numéro-24">Numéro 2.4<a href="#numéro-24" class="hash-link" aria-label="Lien direct vers Numéro 2.4" title="Lien direct vers Numéro 2.4">​</a></h3>
 <p>Affichez tous les 10 fichiers de <strong><code>hdoc20.txt</code></strong> à <strong><code>hdoc29.txt</code></strong>.</p>
 <p>Les fichiers <strong><code>hdoc200.txt</code></strong> à <strong><code>hdoc209.txt</code></strong> ne doivent pas s&#x27;afficher.</p>
-<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary><b>Réponse</b></summary><div><div class="collapsibleContent_i85q"><div><p>~/excmd1/wc1$ ls hdoc2?.txt</p></div></div></div></details>
+<p>Option 1:</p>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary><b>Réponse</b></summary><div><div class="collapsibleContent_i85q"><div><p>~/excmd1/wc1$ ls hdoc2?.txt</p></div><p>Bien que valide dans ce cas, cette commande afficherait aussi <i>hdoc2a.txt</i> si le fichier existait. On va donc préférer l&#x27;option 2.</p></div></div></details>
+<p>Option 2:</p>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary><b>Réponse</b></summary><div><div class="collapsibleContent_i85q"><div><p>~/excmd1/wc1$ ls hdoc2{0..9}.txt</p></div></div></div></details>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="numéro-25">Numéro 2.5<a href="#numéro-25" class="hash-link" aria-label="Lien direct vers Numéro 2.5" title="Lien direct vers Numéro 2.5">​</a></h3>
 <p>Copiez tous les fichiers <strong><code>.txt</code></strong> dans le dossier <strong><code>~/excmd1/txt/</code></strong>. Il doit avoir 280 fichiers.</p>
-<p>Pour vous aider, effectuez un <strong><code>dir</code></strong> avec les métacaractères avant de procéder à la copie.</p>
+<p>Pour vous aider, effectuez un <strong><code>ls</code></strong> avec les métacaractères avant de procéder à la copie.</p>
 <p>Avez-vous une erreur ? Faites l&#x27;action manquante.</p>
 <details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary><b>Réponse</b></summary><div><div class="collapsibleContent_i85q"><div><p>Vous devez créer le dossier txt, car il n&#x27;existe pas. <br>
 ~/excmd1/wc1$ mkdir ~/excmd1/txt <br>
@@ -171,7 +176,7 @@ Ligne 3 : Orange</p>
 <p>Déplacez tous les fichiers qui débutent par <strong><code>adoc</code></strong> et <strong><code>hdoc</code></strong> dans le dossier <strong><code>~/excmd1/xdoc/</code></strong>. Il doit avoir 190 fichiers.</p>
 <p>Les fichiers qui débutent par <strong><code>doc</code></strong> ne doivent pas être déplacés.</p>
 <p>Utilisez uniquement une commande pour le déplacement.</p>
-<p>Pour vous aider, effectuez un <strong><code>dir</code></strong> avec les métacaractères avant d&#x27;effectuer le déplacement.</p>
+<p>Pour vous aider, effectuez un <strong><code>ls</code></strong> avec les métacaractères avant d&#x27;effectuer le déplacement.</p>
 <p>Pour le chemin de destinations, utilisez ceci : <strong><code>~/excmd1/xdoc/</code></strong></p>
 <details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary><b>Réponse</b></summary><div><div class="collapsibleContent_i85q"><div><p>~/excmd1/wc1$ mv ?doc* ~/excmd1/xdoc/</p></div></div></div></details>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="numéro-27">Numéro 2.7<a href="#numéro-27" class="hash-link" aria-label="Lien direct vers Numéro 2.7" title="Lien direct vers Numéro 2.7">​</a></h3>
